@@ -24,7 +24,7 @@ const currencies = [
   
 ];
 
-const txListUL = document.querySelector("#tx-table tbody");
+const txTable = document.querySelector("#tx-table tbody");
 const liveRoundSpan = document.querySelector("#live-round");
 const currentRoundSpan = document.querySelector("#current-round");
 const numTxSpan = document.querySelector("#num-tx");
@@ -47,7 +47,7 @@ backward.addEventListener('change', async (event) => {
 
   const result = await algodClient.status().do();
   round = result["last-round"];
-  //round = 21860913;
+  //round = 21862367;
 
   liveRoundSpan.textContent = result["last-round"];
   currentRoundSpan.textContent = round;
@@ -127,7 +127,9 @@ backward.addEventListener('change', async (event) => {
             
             
             `;
-            txListUL.append(tr);
+            
+            txTable.prepend(tr);
+
           }
 
         } catch (err) {
