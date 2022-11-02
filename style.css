@@ -157,8 +157,17 @@ h1 a:hover {
 
 }
 
+footer {
+    color: var(--white-dark);
+}
+
 footer a {
     color: var(--light-green);
+}
+
+footer a.coffee {
+    text-decoration: none;
+    color: var(--white);
 }
 
 footer a:hover {
