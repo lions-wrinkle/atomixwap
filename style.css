@@ -165,6 +165,12 @@ footer a {
     color: var(--light-green);
 }
 
+footer a.secondary {
+    color: var(--white-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 footer a.coffee {
     text-decoration: none;
     color: var(--white);
