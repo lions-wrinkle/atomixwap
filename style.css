@@ -97,6 +97,11 @@ h1 a:hover {
     color: black;
 }
 
+.btn-defly {
+    background-color: black;
+    color: white;
+}
+
 .btn-disconnect {
     background-color: #362c21;
     color: var(--white);
